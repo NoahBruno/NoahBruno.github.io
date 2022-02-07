@@ -1,0 +1,102 @@
+body{
+    color:black;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    width:0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #000000;
+}
+
+a:link{
+    color: #F06449;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.link-text{
+    font-size: large;
+}
+
+a:visited {
+    color: antiquewhite;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ec4e0a;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #EDE6E3;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.navbars{
+    width:100%;
+    height:5rem;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.card{
+    z-index: 1000;
+    position: relative;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.navbar-right{
+    text-align: right;
+    margin-right:5%;
+}
+
+.navbar-left{
+    position: relative;
+    float:left;
+}
+
+#frontPage{
+    height: 100vh;
+    width: 100%;
+    background-color: #6F7788;
+}
+
+#aboutMe{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(112, 134, 147, 0.6);
+}
+
+#expierence{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(133, 146, 149, 0.6);
+}
+
+#work{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(147, 155, 155, 0.6);
+}
+
+#contact{
+    height: 300px;
+    width: 100%;
+    background-color: rgba(171, 169, 156, 0.6);
+}
