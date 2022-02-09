@@ -17,44 +17,31 @@ body::-webkit-scrollbar-thumb{
     background: #000000;
 }
 
-a:link{
-    color: #F06449;
-    background-color: transparent;
-    text-decoration: none;
-}
-
 .link-text{
     font-size: large;
+    color:#ec4e0a;
 }
 
-a:visited {
-    color: antiquewhite;
-    background-color: transparent;
+.nav-links {
+    color:rgba(0, 247, 255, 0.49);
     text-decoration: none;
 }
 
-a:hover {
+a:hover .material-icons{
     color: #ec4e0a;
-    background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-a:active {
-    color: #EDE6E3;
-    background-color: transparent;
-    text-decoration: underline;
+a:hover .link-text{
+    text-decoration: none;
+    color:rgba(0, 247, 255, 0.49);
 }
 
-.navbars{
-    width:100%;
-    height:5rem;
+.navbar {
+    width: 100%;
+    height: 5rem;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.80);
-}
-
-.card{
-    z-index: 1000;
-    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 ul{
@@ -70,11 +57,45 @@ ul{
     position: relative;
     float:left;
 }
+h1{
+    display: inline;
+    position:relative;
+    letter-spacing: -5px;
+    color: rgba(192, 33, 33, 0.50);
+}
+
+h1:after{
+    content: "Welcome To Noah Bruno's Portfolio";
+    position: absolute; left: 10px; top: 5px;
+    color: rgba(0, 247, 255, 0.49);
+}
+
+.type {
+    overflow: hidden;
+    border-right: .15em solid #ec4e0a;
+    color: rgba(236, 78, 10, 0.50);
+    white-space: nowrap;
+    font-size: 6.5rem;
+    width: 0;
+    animation: typing 1.5s steps(20, end) forwards,
+    blink .8s infinite;
+}
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: #ec4e0a; }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
 
 #frontPage{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color: #6F7788;
+
 }
 
 #aboutMe{
@@ -83,7 +104,7 @@ ul{
     background-color: rgba(112, 134, 147, 0.6);
 }
 
-#expierence{
+#experience{
     height: 300px;
     width: 100%;
     background-color: rgba(133, 146, 149, 0.6);
@@ -99,4 +120,38 @@ ul{
     height: 300px;
     width: 100%;
     background-color: rgba(171, 169, 156, 0.6);
+}
+
+.slideL {
+    animation-duration: 3s;
+    animation-name: slideinL;
+    text-align: center;
+}
+
+@keyframes slideinL {
+    from {
+        margin-left: 100%;
+        /*width:30%*/
+    }
+
+    to {
+        margin-left: 0%;
+        /*width: 30%;*/
+    }
+}
+.slideR {
+    animation-duration: 3s;
+    animation-name: slideinR;
+}
+
+@keyframes slideinR {
+    from {
+        margin-right: 100%;
+        /*width: 30%;*/
+    }
+
+    to {
+        margin-right: 0%;
+        /*width: 30%;*/
+    }
 }
