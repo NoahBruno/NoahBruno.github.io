@@ -99,59 +99,63 @@ h1:after{
 }
 
 #aboutMe{
-    height: 300px;
+    height: 50vh;
     width: 100%;
     background-color: rgba(112, 134, 147, 0.6);
 }
 
 #experience{
-    height: 300px;
+    height: 50vh;
     width: 100%;
     background-color: rgba(133, 146, 149, 0.6);
 }
 
 #work{
-    height: 300px;
+    height: 50vh;
     width: 100%;
     background-color: rgba(147, 155, 155, 0.6);
 }
 
 #contact{
-    height: 300px;
+    height: 50vh;
     width: 100%;
     background-color: rgba(171, 169, 156, 0.6);
 }
 
-.slideL {
-    animation-duration: 3s;
-    animation-name: slideinL;
-    text-align: center;
-}
-
-@keyframes slideinL {
+@keyframes fadeInLeft {
     from {
-        margin-left: 100%;
-        /*width:30%*/
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
     }
 
     to {
-        margin-left: 0%;
-        /*width: 30%;*/
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
-.slideR {
-    animation-duration: 3s;
-    animation-name: slideinR;
+.animatefadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    animation-duration: 2s;
 }
 
-@keyframes slideinR {
+@keyframes fadeInRight {
     from {
-        margin-right: 100%;
-        /*width: 30%;*/
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
     }
 
     to {
-        margin-right: 0%;
-        /*width: 30%;*/
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
+}
+.animatefadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    animation-duration: 2s;
 }
