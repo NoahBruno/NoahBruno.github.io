@@ -42,6 +42,7 @@ a:hover .link-text{
     height: 5rem;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Bangers', cursive;
 }
 
 ul{
@@ -57,17 +58,13 @@ ul{
     position: relative;
     float:left;
 }
-h1{
-    display: inline;
-    position:relative;
-    letter-spacing: -5px;
-    color: rgba(192, 33, 33, 0.50);
-}
 
-h1:after{
-    content: "Welcome To Noah Bruno's Portfolio";
+#main:after{
+    content: "Welcome To Noah Bruno's Portfolio.";
     position: absolute; left: 10px; top: 5px;
     color: rgba(0, 247, 255, 0.49);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
 }
 
 .type {
@@ -79,6 +76,10 @@ h1:after{
     width: 0;
     animation: typing 1.5s steps(20, end) forwards,
     blink .8s infinite;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    display: inline;
+    position:relative;
 }
 
 @keyframes blink {
@@ -95,31 +96,63 @@ h1:after{
     height: 90vh;
     width: 100%;
     background-color: #6F7788;
-
 }
 
 #aboutMe{
-    height: 50vh;
+    height: 90vh;
     width: 100%;
     background-color: rgba(112, 134, 147, 0.6);
+    font-family: 'Bangers', cursive;
+}
+
+#topCard:after{
+    content: "About Me";
+    position: absolute; left: 4px; top: 2px;
+    color: rgba(0, 247, 255, 0.49);
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+}
+
+#middleCard:after{
+    content: "Experience";
+    position: absolute; left: 4px; top: 2px;
+    color: rgba(0, 247, 255, 0.49);
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+}
+
+#lastCard:after{
+    content: "Work/Education";
+    position: absolute; left: 4px; top: 2px;
+    color: rgba(0, 247, 255, 0.49);
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+}
+
+.forCardTops {
+    overflow: hidden;
+    color: rgba(236, 78, 10, 0.50);
+    white-space: nowrap;
+    font-size: 4.5rem;
+    width: 0;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    display: inline;
+    position:relative;
 }
 
 #experience{
-    height: 50vh;
+    height: 90vh;
     width: 100%;
     background-color: rgba(133, 146, 149, 0.6);
+    font-family: 'Bangers', cursive;
 }
 
 #work{
-    height: 50vh;
+    height: 90vh;
     width: 100%;
     background-color: rgba(147, 155, 155, 0.6);
-}
-
-#contact{
-    height: 50vh;
-    width: 100%;
-    background-color: rgba(171, 169, 156, 0.6);
+    font-family: 'Bangers', cursive;
 }
 
 @keyframes fadeInLeft {
@@ -158,4 +191,39 @@ h1:after{
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
     animation-duration: 2s;
+}
+
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.1) rotate(30deg);
+        transform: scale(0.1) rotate(30deg);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+    }
+
+    50% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.animate__jackInTheBox {
+    -webkit-animation-name: jackInTheBox;
+    animation-name: jackInTheBox;
+}
+
+.hide{
+    visibility: hidden;
+
 }

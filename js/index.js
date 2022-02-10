@@ -1,41 +1,3 @@
-// // Remove the transition class
-// const animateR = document.querySelector('.ani');
-// animateR.classList.remove('animatefadeInRight');
-//
-// // Create the observer, same as before:
-// const observerR = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             animateR.classList.add('animatefadeInRight');
-//             return;
-//         }
-//
-//         animateR.classList.remove('animatefadeInRight');
-//     });
-// });
-//
-// observerR.observe(document.querySelector('.me'));
-//
-//
-//
-// // Remove the transition class
-// const animateL = document.querySelector('.ani');
-// animateL.classList.remove('animatefadeInLeft');
-//
-// // Create the observer, same as before:
-// const observerL = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             animateL.classList.add('animatefadeInLeft');
-//             return;
-//         }
-//
-//         animateL.classList.remove('animatefadeInLeft');
-//     });
-// });
-//
-// observerL.observe(document.querySelector('.me'));
-
 function reveal() {
     var reveals = document.querySelectorAll(".me");
     for (var i = 0; i < reveals.length; i++) {
@@ -44,8 +6,10 @@ function reveal() {
         var elementVisible = 150;
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("animatefadeInRight");
+            reveals[i].classList.remove("hide")
         } else {
             reveals[i].classList.remove("animatefadeInRight");
+            reveals[i].classList.add("hide");
         }
     }
 }
@@ -60,8 +24,10 @@ function revealTwo() {
         var elementVisible = 150;
         if (elementTop < windowHeight - elementVisible) {
             revealsTwo[i].classList.add("animatefadeInLeft");
+            revealsTwo[i].classList.remove("hide")
         } else {
             revealsTwo[i].classList.remove("animatefadeInLeft");
+            revealsTwo[i].classList.add("hide");
         }
     }
 }
