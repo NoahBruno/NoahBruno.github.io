@@ -33,3 +33,19 @@ function revealTwo() {
 }
 
 window.addEventListener("scroll", revealTwo);
+
+function revealJack() {
+    var revealJack = document.querySelectorAll(".jack");
+    for (var i = 0; i < revealJack.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = revealJack[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+            revealJack[i].classList.add("animate__jackInTheBox");
+        } else {
+            revealJack[i].classList.remove("animate__jackInTheBox");
+        }
+    }
+}
+
+window.addEventListener("scroll", revealJack);

@@ -221,7 +221,9 @@ ul{
 .animate__jackInTheBox {
     -webkit-animation-name: jackInTheBox;
     animation-name: jackInTheBox;
+    animation-duration: 2s;
 }
+
 
 .hide{
     visibility: hidden;
