@@ -224,8 +224,15 @@ ul{
     animation-duration: 2s;
 }
 
+.bigText{
+    font-size: xx-large;
+}
 
 .hide{
     visibility: hidden;
 
+}
+
+.e{
+    width:80px;
 }
