@@ -49,3 +49,7 @@ function revealJack() {
 }
 
 window.addEventListener("scroll", revealJack);
+
+$(".a1").hover(function(){
+$(this).addClass("animate__rubberBand")
+})
