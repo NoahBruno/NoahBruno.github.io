@@ -288,35 +288,270 @@ ul{
     height:65vh;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1369px){
+
+    .type {
+        overflow: hidden;
+        border-right: .15em solid #ec4e0a;
+        color: rgba(236, 78, 10, 0.50);
+        white-space: nowrap;
+        font-size: 5rem;
+        width: 0;
+        animation: typing 1.5s steps(20, end) forwards,
+        blink .8s infinite;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+        display: inline;
+        position:relative;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .e{
+        width:80px;
+        font-size: 30px;
+    }
+
+    #html{
+        /*position: absolute;*/
+        margin-left: 200px;
+    }
+
+    #css{
+        margin-left: 850px;
+    }
+
+    #javaS{
+        margin-left:25px;
+    }
+
+    #boot{
+        margin-left:575px;
+    }
+
+    #ajax{
+        margin-left:300px;
+    }
+
+    #java{
+        margin-left:750px;
+    }
+
+    #mysql{
+        margin-left:450px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #main:after{
+        content: "Welcome To Noah Bruno's Portfolio.";
+        position: absolute; left: 8px; top: 4px;
+        color: rgba(0, 247, 255, 0.49);
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+    }
+
+    .type {
+        overflow: hidden;
+        border-right: .15em solid #ec4e0a;
+        color: rgba(236, 78, 10, 0.50);
+        white-space: nowrap;
+        font-size: 50px;
+        width: 0;
+        animation: typing 1.5s steps(20, end) forwards,
+        blink .8s infinite;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+        display: inline;
+        position:relative;
+    }
+
+    .pic{
+        width:30vh;
+        height:40vh;
+    }
+
+    #html{
+        /*position: absolute;*/
+        margin-left: 100px;
+    }
+
+    #css{
+        margin-left: 550px;
+    }
+
+    #javaS{
+        margin-left:25px;
+    }
+
+    #boot{
+        margin-left:455px;
+    }
+
+    #ajax{
+        margin-left:200px;
+    }
+
+    #java{
+        margin-left:600px;
+    }
+
+    #mysql{
+        margin-left:275px;
+    }
+}
+
+@media screen and (max-width: 767px) {
     #nav {
         display: none;
     }
     .bigText{
         font-size: small;
     }
-    .e{
-        width:5px;
-        font-size: x-small;
-    }
 
     .aColor{
         font-size: x-large;
     }
 
+    #main:after{
+        content: "Welcome To Noah Bruno's Portfolio.";
+        position: absolute; left: 8px; top: 4px;
+        color: rgba(0, 247, 255, 0.49);
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+    }
+
+    .type {
+        overflow: hidden;
+        border-right: .15em solid #ec4e0a;
+        color: rgba(236, 78, 10, 0.50);
+        white-space: nowrap;
+        font-size: 3rem;
+        width: 0;
+        animation: typing 1.5s steps(20, end) forwards,
+        blink .8s infinite;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+        display: inline;
+        position:relative;
+    }
+
+
+    #lastCard{
+        display: none;
+    }
+
+    #lastCard2:after{
+        content: "Work";
+        position: absolute; left: 4px; top: 2px;
+        color: rgba(0, 247, 255, 0.49);
+        font-family: 'Bangers', cursive;
+        letter-spacing: 2px;
+    }
+
+
+
 }
 
-@media screen and (max-width: 425px){
-    .pic{
-        width:30vh;
-        height:40vh;
-        float:right;
-    }
+@media screen and (max-width: 680px){
+
 
     .aColor{
         font-size:medium;
     }
 
+
+    #main:after{
+        content: "Welcome To Noah Bruno's Portfolio.";
+        position: absolute; left: 8px; top: 4px;
+        color: rgba(0, 247, 255, 0.49);
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+    }
+
+    .type {
+        overflow: hidden;
+        border-right: .15em solid #ec4e0a;
+        color: rgba(236, 78, 10, 0.50);
+        white-space: nowrap;
+        font-size: 1.5rem;
+        width: 0;
+        animation: typing 1.5s steps(20, end) forwards,
+        blink .8s infinite;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+        display: inline;
+        position:relative;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+
+    #html{
+        /*position: absolute;*/
+        margin-left: 0;
+    }
+
+    #css{
+        margin-left: 0;
+    }
+
+    #javaS{
+        margin-left:0;
+    }
+
+    #boot{
+        margin-left:0;
+    }
+
+    #ajax{
+        margin-left:0;
+    }
+
+    #java{
+        margin-left:0;
+    }
+
+    #mysql{
+        margin-left:0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #main:after{
+        content: "Welcome To Noah Bruno's Portfolio.";
+        position: absolute; left: 4px; top: 2px;
+        color: rgba(0, 247, 255, 0.49);
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+    }
+
+    .type {
+        overflow: hidden;
+        border-right: .15em solid #ec4e0a;
+        color: rgba(236, 78, 10, 0.50);
+        white-space: nowrap;
+        font-size: 1rem;
+        width: 0;
+        animation: typing 1.5s steps(20, end) forwards,
+        blink .8s infinite;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+        display: inline;
+        position:relative;
+    }
+
+    .pic{
+        width:20vh;
+        height:30vh;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #lastCard2{
+        display:none;
+    }
 }
 
 @media screen and (min-width: 1300px) {
@@ -324,33 +559,32 @@ ul{
         width:80px;
         font-size: 45px;
     }
-
-    .a1{
+    #html{
         /*position: absolute;*/
         margin-left: 400px;
     }
 
-    .a2{
+    #css{
         margin-left: 1150px;
     }
 
-    .a3{
+    #javaS{
         margin-left:200px;
     }
 
-    .a4{
+    #boot{
         margin-left:850px;
     }
 
-    .a5{
+    #ajax{
         margin-left:500px;
     }
 
-    .a6{
+    #java{
         margin-left:1000px;
     }
 
-    .a7{
+    #mysql{
         margin-left:700px;
     }
 }
