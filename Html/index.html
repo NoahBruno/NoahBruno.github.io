@@ -27,19 +27,19 @@
     </ul>
     <ul class="navbar-nav">
         <li class="">
-            <a href="#" class="navbar-brand nav-links">
+            <a href="#aboutMe" class="navbar-brand nav-links">
                 <span class="material-icons">&#xe815;</span>
                 <span class="link-text"> About Me</span>
             </a>
-            <a href="#" class="navbar-brand nav-links">
+            <a href="#experience" class="navbar-brand nav-links">
                 <span class="material-icons">&#xef42;</span>
                 <span class="link-text"> Experience</span>
             </a>
-            <a href="#" class="navbar-brand nav-links">
+            <a href="#work" class="navbar-brand nav-links">
                 <span class="material-icons">&#xe8f9;</span>
                 <span class="link-text"> Work</span>
             </a>
-            <a href="#" class="navbar-brand nav-links">
+            <a href="#contact" class="navbar-brand nav-links">
                 <span class="material-icons">&#xe8a3;</span>
                 <span class="link-text"> Contact</span>
             </a>
@@ -51,12 +51,12 @@
 </div>
 <!--ABOUT ME------------------------------------------------------------->
 <div id="aboutMe" class=" container-fluid ">
-    <div class="card-transparent me animatefadeInRight hide w-100" >
-        <div class="card-header animate__jackInTheBox jack text-center">
+    <div class="jack card-transparent me animatefadeInRight hide w-100" >
+        <div class=" card-header animate__jackInTheBox text-center">
             <h2 id="topCard" class="forCardTops ">About Me</h2>
         </div>
         <div class="card-body animate__jackInTheBox jack d-flex">
-            <p class="bigText">My name is Noah Bruno.<br> I'm a Full-stack software developer from San Antonio, Tx with a passion for development and technology. Eager to utilize my problem-solving skills to code solutions to any challenges that arise. Repeatedly ready to learn and boost my knowledge of existing and new technologies.  </p>
+            <p class="bigText">My name is Noah Bruno.<br> I'm a Full-stack software developer from San Antonio, Tx with a passion for development and technology. Eager to utilize my problem-solving skills to code solutions to any challenges. Repeatedly ready to learn and boost my knowledge of existing and new technologies.  </p>
             <div ><img src="/assets/NoahBruno.jpg" class="pic"></div>
         </div>
 
@@ -64,8 +64,8 @@
 </div>
 <!--EXPERIENCE------------------------------------------------------------->
 <div id="experience" class=" container-fluid d-flex justify-content-end ">
-    <div class="card-transparent animatefadeInLeft me2 hide w-100" >
-        <div class="card-header animate__jackInTheBox jack text-center">
+    <div class="jack card-transparent animatefadeInLeft me2 hide w-100" >
+        <div class="card-header animate__jackInTheBox text-center">
             <h2 id="middleCard" class="forCardTops">Experience</h2>
         </div>
         <div class="card-body animate__jackInTheBox jack effect">
@@ -82,18 +82,17 @@
 </div>
 <!--WORK--------------------------------------------------------------------->
 <div id="work" class=" container-fluid d-flex justify-content-start ">
-    <div class="card-transparent me animatefadeInRight hide w-100">
-        <div class="card-header animate__jackInTheBox jack text-center">
+    <div class="jack card-transparent me animatefadeInRight hide w-100">
+        <div class="card-header animate__jackInTheBox text-center">
             <h2 id="lastCard" class="forCardTops">Work/Education</h2>
         </div>
         <div class="card-body animate__jackInTheBox jack">
-            <blockquote class="blockquote mb-0">
                 <p class="bigText">Education</p>
                 <ul class="bigText">
                     <li>CodeUp- San Antonio, Tx</li>
                 </ul>
                 <p class="bigText">Work</p>
-                <ul class="bigText">
+                <ul class="bigText d-flex justify-content-between">
                     <li ><a class="aColor" href="https://github.com/Mark-Noah">Coffee Project</a></li>
                     <li><a class="aColor" href="https://github.com/NoahBruno/codeup-web-exercises/blob/main/html/weather_map.html">Weather Project</a></li>
                     <li><a class="aColor" href="https://github.com/Mario-Noah-Therman">Movie Project</a></li>
@@ -118,188 +117,39 @@
 <!--</div>-->
 <!--FOOTER----------------------------------------------------------------------->
 <!-- Footer -->
-<footer class="bg-dark text-center text-white">
+<footer id="contact" class="bg-dark text-center text-white">
     <!-- Grid container -->
     <div class="container p-4">
         <!-- Section: Social media -->
-        <section class="mb-4">
-            <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-facebook-f"></i
-            ></a>
+        <section class="mb-4 d-flex justify-content-center">
+            <!-- Email -->
+            <a id="email" class="btn btn-outline-light btn-floating m-1" href="mailto:noah.bruno122@gmail.com" role="button"><img src="https://img.icons8.com/external-xnimrodx-lineal-gradient-xnimrodx/48/000000/external-email-contact-us-xnimrodx-lineal-gradient-xnimrodx-4.png"/><i class="fab fa-email"></i></a>
 
-            <!-- Twitter -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-twitter"></i
-            ></a>
-
-            <!-- Google -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-google"></i
-            ></a>
-
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-instagram"></i
-            ></a>
+            <!-- Phone -->
+            <a id="phone" class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><img src="https://img.icons8.com/color/48/000000/apple-phone.png"/><i class="fab fa-phone"></i></a>
 
             <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-linkedin-in"></i
+            <a id="linkedin" class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/noah-bruno-092526222/" role="button"
+            ><img src="https://img.icons8.com/color/48/000000/linkedin.png"/><i class="fab fa-linkedin-in"></i
             ></a>
 
             <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-github"></i
-            ></a>
+            <a id="github" class="btn btn-outline-light btn-floating m-1" href="https://github.com/NoahBruno" role="button">
+                <img src="https://img.icons8.com/fluency/48/000000/github.png"/><i class="fab fa-github"></i>
+            </a>
         </section>
         <!-- Section: Social media -->
 
-        <!-- Section: Form -->
-        <section class="">
-            <form action="">
-                <!--Grid row-->
-                <div class="row d-flex justify-content-center">
-                    <!--Grid column-->
-                    <div class="col-auto">
-                        <p class="pt-2">
-                            <strong>Sign up for our newsletter</strong>
-                        </p>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-5 col-12">
-                        <!-- Email input -->
-                        <div class="form-outline form-white mb-4">
-                            <input type="email" id="form5Example21" class="form-control" />
-                            <label class="form-label" for="form5Example21">Email address</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-auto">
-                        <!-- Submit button -->
-                        <button type="submit" class="btn btn-outline-light mb-4">
-                            Subscribe
-                        </button>
-                    </div>
-                    <!--Grid column-->
-                </div>
-                <!--Grid row-->
-            </form>
-        </section>
-        <!-- Section: Form -->
-
         <!-- Section: Text -->
         <section class="mb-4">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-                repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-                eum harum corrupti dicta, aliquam sequi voluptate quas.
-            </p>
+            <h2>Looking to hire?</h2>
+            <h5>
+                Well you're in luck! I'm always ready for a new challenge! Contact me through any of the above ways, and I will get back to you as soon as possible.
+            </h5>
         </section>
-        <!-- Section: Text -->
 
-        <!-- Section: Links -->
-        <section class="">
-            <!--Grid row-->
-            <div class="row">
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-white">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-white">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-white">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-white">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-white">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-            </div>
-            <!--Grid row-->
-        </section>
-        <!-- Section: Links -->
     </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    </div>
-    <!-- Copyright -->
 </footer>
 <!-- Footer -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

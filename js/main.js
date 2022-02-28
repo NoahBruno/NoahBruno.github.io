@@ -39,7 +39,7 @@ function revealJack() {
     for (var i = 0; i < revealJack.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = revealJack[i].getBoundingClientRect().top;
-        var elementVisible = 150;
+        var elementVisible = 25;
         if (elementTop < windowHeight - elementVisible) {
             revealJack[i].classList.add("animate__jackInTheBox");
         } else {
@@ -50,6 +50,26 @@ function revealJack() {
 
 window.addEventListener("scroll", revealJack);
 
-$(".a1").hover(function(){
-$(this).addClass("animate__rubberBand")
+$("#email").hover(function(){
+    $(this).append("<span id='emailSpan'>noah.bruno122@gmail.com</span>")
+}, function(){
+    $(this).find("#emailSpan").last().remove()
+})
+
+$("#phone").hover(function(){
+    $(this).append("<span id='phoneSpan'>(210)722-4286</span>")
+}, function(){
+    $(this).find("#phoneSpan").last().remove()
+})
+
+$("#linkedin").hover(function(){
+    $(this).append("<span id='linkedinSpan'>@NoahBruno</span>")
+}, function(){
+    $(this).find("#linkedinSpan").last().remove()
+})
+
+$("#github").hover(function(){
+    $(this).append("<span id='githubSpan'>@NoahBruno</span>")
+}, function(){
+    $(this).find("#githubSpan").last().remove()
 })
