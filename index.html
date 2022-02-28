@@ -16,7 +16,7 @@
 </head>
 <body>
 <!--NAVBAR------------------------------------------------------------>
-<nav class="navbar sticky-top">
+<nav class="navbar sticky-top" id="nav">
     <ul class="navbar-nav">
         <li class="">
             <a class="navbar-brand nav-links" href="#">
@@ -46,6 +46,39 @@
         </li>
     </ul>
 </nav>
+<div id="hamburger" class="pos-f-t d-block d-md-none">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <img src="/assets/NoahBruno.jpg" width="60" height="60" class="d-inline-block rounded-circle" alt="">
+            <span class="link-text">  Noah Bruno</span>
+            <ul class="col-1">
+                <li class="">
+                    <a href="#aboutMe" class="navbar-brand nav-links">
+                        <span class="material-icons">&#xe815;</span>
+                        <span class="link-text"> About Me</span>
+                    </a>
+                    <a href="#experience" class="navbar-brand nav-links">
+                        <span class="material-icons">&#xef42;</span>
+                        <span class="link-text"> Experience</span>
+                    </a>
+                    <a href="#work" class="navbar-brand nav-links">
+                        <span class="material-icons">&#xe8f9;</span>
+                        <span class="link-text"> Work</span>
+                    </a>
+                    <a href="#contact" class="navbar-brand nav-links">
+                        <span class="material-icons">&#xe8a3;</span>
+                        <span class="link-text"> Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</div>
 <div id="frontPage" class="d-flex justify-content-center align-items-center">
 <h1 id="main" class="type">Welcome To Noah Bruno's Portfolio.</h1>
 </div>
@@ -56,8 +89,8 @@
             <h2 id="topCard" class="forCardTops ">About Me</h2>
         </div>
         <div class="card-body animate__jackInTheBox jack d-flex">
-            <p class="bigText">My name is Noah Bruno.<br> I'm a Full-stack software developer from San Antonio, Tx with a passion for development and technology. Eager to utilize my problem-solving skills to code solutions to any challenges. Repeatedly ready to learn and boost my knowledge of existing and new technologies.  </p>
-            <div ><img src="/assets/NoahBruno.jpg" class="pic"></div>
+            <p id="text" class="bigText">My name is Noah Bruno.<br> I'm a Full-stack software developer from San Antonio, Tx with a passion for development and technology. Eager to utilize my problem-solving skills to code solutions to any challenges. Repeatedly ready to learn and boost my knowledge of existing and new technologies.  </p>
+            <div><img src="/assets/NoahBruno.jpg" class="pic"></div>
         </div>
 
     </div>
@@ -104,6 +137,7 @@
 <footer id="contact" class="bg-dark text-center text-white">
     <!-- Grid container -->
     <div class="container p-4">
+        <h2>Contact Information</h2>
         <!-- Section: Social media -->
         <section class="mb-4 d-flex justify-content-center">
             <!-- Email -->

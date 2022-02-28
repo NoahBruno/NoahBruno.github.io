@@ -233,39 +233,7 @@ ul{
 
 }
 
-.e{
-    width:80px;
-    font-size: 45px;
-}
 
-.a1{
-    /*position: absolute;*/
-    margin-left: 400px;
-}
-
-.a2{
-    margin-left: 1150px;
-}
-
-.a3{
-    margin-left:200px;
-}
-
-.a4{
-    margin-left:850px;
-}
-
-.a5{
-    margin-left:500px;
-}
-
-.a6{
-    margin-left:1000px;
-}
-
-.a7{
-    margin-left:700px;
-}
 
 .effect {
     margin: 0;
@@ -318,4 +286,71 @@ ul{
 .pic{
     width:50vh;
     height:65vh;
+}
+
+@media screen and (max-width: 768px) {
+    #nav {
+        display: none;
+    }
+    .bigText{
+        font-size: small;
+    }
+    .e{
+        width:5px;
+        font-size: x-small;
+    }
+
+    .aColor{
+        font-size: x-large;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    .pic{
+        width:30vh;
+        height:40vh;
+        float:right;
+    }
+
+    .aColor{
+        font-size:medium;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+    .e{
+        width:80px;
+        font-size: 45px;
+    }
+
+    .a1{
+        /*position: absolute;*/
+        margin-left: 400px;
+    }
+
+    .a2{
+        margin-left: 1150px;
+    }
+
+    .a3{
+        margin-left:200px;
+    }
+
+    .a4{
+        margin-left:850px;
+    }
+
+    .a5{
+        margin-left:500px;
+    }
+
+    .a6{
+        margin-left:1000px;
+    }
+
+    .a7{
+        margin-left:700px;
+    }
 }
