@@ -6,7 +6,7 @@ function reveal() {
         var elementVisible = 150;
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("animatefadeInRight");
-            reveals[i].classList.remove("hide")
+            reveals[i].classList.remove("hide");
         } else {
             reveals[i].classList.remove("animatefadeInRight");
             reveals[i].classList.add("hide");
@@ -24,7 +24,7 @@ function revealTwo() {
         var elementVisible = 150;
         if (elementTop < windowHeight - elementVisible) {
             revealsTwo[i].classList.add("animatefadeInLeft");
-            revealsTwo[i].classList.remove("hide")
+            revealsTwo[i].classList.remove("hide");
         } else {
             revealsTwo[i].classList.remove("animatefadeInLeft");
             revealsTwo[i].classList.add("hide");
@@ -39,11 +39,13 @@ function revealJack() {
     for (var i = 0; i < revealJack.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = revealJack[i].getBoundingClientRect().top;
-        var elementVisible = 25;
+        var elementVisible = 5;
         if (elementTop < windowHeight - elementVisible) {
-            revealJack[i].classList.add("animate__jackInTheBox");
+            revealJack[i].classList.add("animate__fadeInUp");
+            revealJack[i].classList.remove("hide");
         } else {
-            revealJack[i].classList.remove("animate__jackInTheBox");
+            revealJack[i].classList.remove("animate__fadeInUp");
+            revealJack[i].classList.add("hide");
         }
     }
 }

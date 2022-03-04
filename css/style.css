@@ -93,13 +93,13 @@ ul{
 }
 
 #frontPage{
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-color: #6F7788;
 }
 
 #aboutMe{
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-color: rgba(112, 134, 147, 0.6);
     font-family: 'Bangers', cursive;
@@ -142,14 +142,14 @@ ul{
 }
 
 #experience{
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-color: rgba(133, 146, 149, 0.6);
     font-family: 'Bangers', cursive;
 }
 
 #work{
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-color: rgba(147, 155, 155, 0.6);
     font-family: 'Bangers', cursive;
@@ -192,36 +192,34 @@ ul{
     animation-name: fadeInRight;
     animation-duration: 2s;
 }
-
-@keyframes jackInTheBox {
+@keyframes fadeInUp {
     from {
         opacity: 0;
-        -webkit-transform: scale(0.1) rotate(30deg);
-        transform: scale(0.1) rotate(30deg);
-        -webkit-transform-origin: center bottom;
-        transform-origin: center bottom;
-    }
-
-    50% {
-        -webkit-transform: rotate(-10deg);
-        transform: rotate(-10deg);
-    }
-
-    70% {
-        -webkit-transform: rotate(3deg);
-        transform: rotate(3deg);
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
     }
 
     to {
         opacity: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
-.animate__jackInTheBox {
-    -webkit-animation-name: jackInTheBox;
-    animation-name: jackInTheBox;
+.animate__fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
     animation-duration: 2s;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .bigText{
@@ -230,10 +228,7 @@ ul{
 
 .hide{
     visibility: hidden;
-
 }
-
-
 
 .effect {
     margin: 0;
@@ -286,6 +281,11 @@ ul{
 .pic{
     width:50vh;
     height:65vh;
+}
+
+.projectImg{
+    width:150px;
+    height:150px;
 }
 
 @media screen and (max-width: 1369px){
@@ -457,7 +457,7 @@ ul{
 
 
     .aColor{
-        font-size:medium;
+        font-size:large;
     }
 
 
@@ -493,6 +493,15 @@ ul{
         color: rgba(0, 247, 255, 0.49);
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 3px;
+    }
+
+    .aColor{
+        font-size: 30px;
+    }
+
+    #ulWork{
+        display:flex;
+        flex-direction: column;
     }
 
     #html{
