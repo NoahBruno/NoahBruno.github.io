@@ -93,13 +93,13 @@ ul{
 }
 
 #frontPage{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color: #648381;
 }
 
 #aboutMe{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color: #FFC857;
     font-family: 'Bangers', cursive;
@@ -142,7 +142,7 @@ ul{
 }
 
 #experience{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color: #D1495B;
     font-family: 'Bangers', cursive;
@@ -344,7 +344,7 @@ ul{
 @media screen and (max-width: 1024px){
     #main:after{
         content: "Welcome To Noah Bruno's Portfolio.";
-        position: absolute; left: 8px; top: 4px;
+        position: absolute; left: 7px; top: 3px;
         color: #FFC857;
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 3px;
@@ -486,12 +486,51 @@ ul{
 }
 
 @media screen and (max-width: 425px){
-    #main:after{
-        content: "Welcome To Noah Bruno's Portfolio.";
+    /*#main:after{*/
+    /*    content: "Welcome To Noah Bruno's Portfolio.";*/
+    /*    position: absolute; left: 4px; top: 2px;*/
+    /*    color: #FFC857;*/
+    /*    font-family: 'Bebas Neue', cursive;*/
+    /*    letter-spacing: 3px;*/
+    /*}*/
+
+    #smallScreen:after{
+        content: "Welcome To";
         position: absolute; left: 4px; top: 2px;
         color: #FFC857;
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 3px;
+    }
+
+    #smallScreen2:after{
+        content: "Noah Bruno's";
+        position: absolute; left: 4px; top: 2px;
+        color: #FFC857;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+    }
+
+    #smallScreen3:after{
+        content: "Portfolio";
+        position: absolute; left: 4px; top: 2px;
+        color: #FFC857;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+    }
+
+    .type {
+        overflow: hidden;
+        border-right: .15em solid #2D2D2A;
+        color: #2D2D2A;
+        white-space: nowrap;
+        font-size: 50px;
+        width: 0;
+        animation: typing 1.5s steps(20, end) forwards,
+        blink .8s infinite;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+        display: inline;
+        position:relative;
     }
 
     .aColor{
@@ -534,28 +573,7 @@ ul{
 }
 
 @media screen and (max-width: 400px){
-    #main:after{
-        content: "Welcome To Noah Bruno's Portfolio.";
-        position: absolute; left: 4px; top: 2px;
-        color: #FFC857;
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 3px;
-    }
 
-    .type {
-        overflow: hidden;
-        border-right: .15em solid #2D2D2A;
-        color: #2D2D2A;
-        white-space: nowrap;
-        font-size: 1rem;
-        width: 0;
-        animation: typing 1.5s steps(20, end) forwards,
-        blink .8s infinite;
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 3px;
-        display: inline;
-        position:relative;
-    }
 
     .pic{
         width:20vh;
