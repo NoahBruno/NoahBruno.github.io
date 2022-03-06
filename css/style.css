@@ -19,29 +19,29 @@ body::-webkit-scrollbar-thumb{
 
 .link-text{
     font-size: large;
-    color:#ec4e0a;
+    color:whitesmoke;
 }
 
 .nav-links {
-    color:rgba(0, 247, 255, 0.49);
+    color:#FFC857;
     text-decoration: none;
 }
 
 a:hover .material-icons{
-    color: #ec4e0a;
+    color: whitesmoke;
     text-decoration: none;
 }
 
 a:hover .link-text{
     text-decoration: none;
-    color:rgba(0, 247, 255, 0.49);
+    color:#FFC857;
 }
 
 .navbar {
     width: 100%;
     height: 5rem;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #2D2D2A;
     font-family: 'Bangers', cursive;
 }
 
@@ -62,15 +62,15 @@ ul{
 #main:after{
     content: "Welcome To Noah Bruno's Portfolio.";
     position: absolute; left: 10px; top: 5px;
-    color: rgba(0, 247, 255, 0.49);
+    color: #FFC857;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 3px;
 }
 
 .type {
     overflow: hidden;
-    border-right: .15em solid #ec4e0a;
-    color: rgba(236, 78, 10, 0.50);
+    border-right: .15em solid #2D2D2A;
+    color: #2D2D2A;
     white-space: nowrap;
     font-size: 6.5rem;
     width: 0;
@@ -84,7 +84,7 @@ ul{
 
 @keyframes blink {
     from { border-color: transparent }
-    to { border-color: #ec4e0a; }
+    to { border-color: #FFC857; }
 }
 
 @keyframes typing {
@@ -95,20 +95,20 @@ ul{
 #frontPage{
     height: 100vh;
     width: 100%;
-    background-color: #6F7788;
+    background-color: #648381;
 }
 
 #aboutMe{
     height: 100vh;
     width: 100%;
-    background-color: rgba(112, 134, 147, 0.6);
+    background-color: #FFC857;
     font-family: 'Bangers', cursive;
 }
 
 #topCard:after{
     content: "About Me";
     position: absolute; left: 4px; top: 2px;
-    color: rgba(0, 247, 255, 0.49);
+    color: #648381;
     font-family: 'Bangers', cursive;
     letter-spacing: 2px;
 }
@@ -116,7 +116,7 @@ ul{
 #middleCard:after{
     content: "Experience";
     position: absolute; left: 4px; top: 2px;
-    color: rgba(0, 247, 255, 0.49);
+    color: #ECEBF3;
     font-family: 'Bangers', cursive;
     letter-spacing: 2px;
 }
@@ -124,14 +124,14 @@ ul{
 #lastCard:after{
     content: "Work/Education";
     position: absolute; left: 4px; top: 2px;
-    color: rgba(0, 247, 255, 0.49);
+    color: #D1495B;
     font-family: 'Bangers', cursive;
     letter-spacing: 2px;
 }
 
 .forCardTops {
     overflow: hidden;
-    color: rgba(236, 78, 10, 0.50);
+    color: #2D2D2A;
     white-space: nowrap;
     font-size: 4.5rem;
     width: 0;
@@ -144,13 +144,13 @@ ul{
 #experience{
     height: 100vh;
     width: 100%;
-    background-color: rgba(133, 146, 149, 0.6);
+    background-color: #D1495B;
     font-family: 'Bangers', cursive;
 }
 
 #work{
     width: 100%;
-    background-color: rgba(147, 155, 155, 0.6);
+    background-color: #ECEBF3;
     font-family: 'Bangers', cursive;
 }
 
@@ -237,9 +237,9 @@ ul{
 .effect .e {
     width: 15%;
     text-align: center;
-    color: rgba(0, 247, 255, 0.49);
+    color: #ECEBF3;
     transition: .5s;
-    -webkit-text-stroke: 2px rgba(0,0,0,0.35);
+    -webkit-text-stroke: 2px #2D2D2A;
 }
 
 .effect .e::before {
@@ -249,7 +249,7 @@ ul{
     width: 100%;
     height: 100%;
     border-radius: 75%;
-    background: #ea6d37;
+    background: #648381;
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -257,23 +257,23 @@ ul{
 
 .effect .e:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #ea6d37;
+    box-shadow: 0 0 15px #648381;
 }
 
 .effect .e:hover {
-    color: #ea6d37;
-    box-shadow: 0 0 5px #ea6d37;
-    text-shadow: 0 0 5px #ea6d37;
+    color: #648381;
+    box-shadow: 0 0 5px #648381;
+    text-shadow: 0 0 5px #648381;
 }
 
 .aColor{
     color:rgba(0, 247, 255, 0.49);
-    -webkit-text-stroke: 2px rgba(0,0,0,0.35);
+    -webkit-text-stroke: 2px #2D2D2A;
     font-size: 45px;
 }
 
 .aColor:hover{
-    color:#ea6d37;
+    color:#FFC857;
     text-decoration: none;
 }
 
@@ -291,8 +291,8 @@ ul{
 
     .type {
         overflow: hidden;
-        border-right: .15em solid #ec4e0a;
-        color: rgba(236, 78, 10, 0.50);
+        border-right: .15em solid #2D2D2A;
+        color: #2D2D2A;
         white-space: nowrap;
         font-size: 5rem;
         width: 0;
@@ -345,15 +345,15 @@ ul{
     #main:after{
         content: "Welcome To Noah Bruno's Portfolio.";
         position: absolute; left: 8px; top: 4px;
-        color: rgba(0, 247, 255, 0.49);
+        color: #FFC857;
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 3px;
     }
 
     .type {
         overflow: hidden;
-        border-right: .15em solid #ec4e0a;
-        color: rgba(236, 78, 10, 0.50);
+        border-right: .15em solid #2D2D2A;
+        color: #2D2D2A;
         white-space: nowrap;
         font-size: 50px;
         width: 0;
@@ -415,15 +415,15 @@ ul{
     #main:after{
         content: "Welcome To Noah Bruno's Portfolio.";
         position: absolute; left: 8px; top: 4px;
-        color: rgba(0, 247, 255, 0.49);
+        color: #FFC857;
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 2px;
     }
 
     .type {
         overflow: hidden;
-        border-right: .15em solid #ec4e0a;
-        color: rgba(236, 78, 10, 0.50);
+        border-right: .15em solid #2D2D2A;
+        color: #2D2D2A;
         white-space: nowrap;
         font-size: 3rem;
         width: 0;
@@ -443,7 +443,7 @@ ul{
     #lastCard2:after{
         content: "Work";
         position: absolute; left: 4px; top: 2px;
-        color: rgba(0, 247, 255, 0.49);
+        color: #D1495B;
         font-family: 'Bangers', cursive;
         letter-spacing: 2px;
     }
@@ -463,15 +463,15 @@ ul{
     #main:after{
         content: "Welcome To Noah Bruno's Portfolio.";
         position: absolute; left: 8px; top: 4px;
-        color: rgba(0, 247, 255, 0.49);
+        color: #FFC857;
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 3px;
     }
 
     .type {
         overflow: hidden;
-        border-right: .15em solid #ec4e0a;
-        color: rgba(236, 78, 10, 0.50);
+        border-right: .15em solid #2D2D2A;
+        color: #2D2D2A;
         white-space: nowrap;
         font-size: 1.5rem;
         width: 0;
@@ -489,7 +489,7 @@ ul{
     #main:after{
         content: "Welcome To Noah Bruno's Portfolio.";
         position: absolute; left: 4px; top: 2px;
-        color: rgba(0, 247, 255, 0.49);
+        color: #FFC857;
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 3px;
     }
@@ -537,15 +537,15 @@ ul{
     #main:after{
         content: "Welcome To Noah Bruno's Portfolio.";
         position: absolute; left: 4px; top: 2px;
-        color: rgba(0, 247, 255, 0.49);
+        color: #FFC857;
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 3px;
     }
 
     .type {
         overflow: hidden;
-        border-right: .15em solid #ec4e0a;
-        color: rgba(236, 78, 10, 0.50);
+        border-right: .15em solid #2D2D2A;
+        color: #2D2D2A;
         white-space: nowrap;
         font-size: 1rem;
         width: 0;
