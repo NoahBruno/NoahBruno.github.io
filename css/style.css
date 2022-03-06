@@ -1,6 +1,6 @@
 body{
     color:black;
-    background-color: whitesmoke;
+    background-color: #ECEBF3;
     margin: 0;
     padding: 0;
 }
@@ -19,22 +19,22 @@ body::-webkit-scrollbar-thumb{
 
 .link-text{
     font-size: large;
-    color:whitesmoke;
+    color:#ECEBF3;
 }
 
 .nav-links {
-    color:#FFC857;
+    color:#3e6241;
     text-decoration: none;
 }
 
 a:hover .material-icons{
-    color: whitesmoke;
+    color: #ECEBF3;
     text-decoration: none;
 }
 
 a:hover .link-text{
     text-decoration: none;
-    color:#FFC857;
+    color:#3e6241;
 }
 
 .navbar {
@@ -62,7 +62,7 @@ ul{
 #main:after{
     content: "Welcome To Noah Bruno's Portfolio.";
     position: absolute; left: 10px; top: 5px;
-    color: #FFC857;
+    color: #ECEBF3;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 3px;
 }
@@ -84,7 +84,7 @@ ul{
 
 @keyframes blink {
     from { border-color: transparent }
-    to { border-color: #FFC857; }
+    to { border-color: #ECEBF3; }
 }
 
 @keyframes typing {
@@ -95,20 +95,20 @@ ul{
 #frontPage{
     height: 90vh;
     width: 100%;
-    background-color: #648381;
+    background-color: #3e6241;
 }
 
 #aboutMe{
     height: 90vh;
     width: 100%;
-    background-color: #FFC857;
+    background-color: #73956F;
     font-family: 'Bangers', cursive;
 }
 
 #topCard:after{
     content: "About Me";
     position: absolute; left: 4px; top: 2px;
-    color: #648381;
+    color: #ECEBF3;
     font-family: 'Bangers', cursive;
     letter-spacing: 2px;
 }
@@ -124,7 +124,7 @@ ul{
 #lastCard:after{
     content: "Work/Education";
     position: absolute; left: 4px; top: 2px;
-    color: #D1495B;
+    color: #7BAE7F;
     font-family: 'Bangers', cursive;
     letter-spacing: 2px;
 }
@@ -144,7 +144,7 @@ ul{
 #experience{
     height: 90vh;
     width: 100%;
-    background-color: #D1495B;
+    background-color: #7BAE7F;
     font-family: 'Bangers', cursive;
 }
 
@@ -249,7 +249,7 @@ ul{
     width: 100%;
     height: 100%;
     border-radius: 75%;
-    background: #648381;
+    background: #D1495B;
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
@@ -257,24 +257,13 @@ ul{
 
 .effect .e:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #648381;
+    box-shadow: 0 0 15px #D1495B;
 }
 
 .effect .e:hover {
-    color: #648381;
-    box-shadow: 0 0 5px #648381;
-    text-shadow: 0 0 5px #648381;
-}
-
-.aColor{
-    color:rgba(0, 247, 255, 0.49);
-    -webkit-text-stroke: 2px #2D2D2A;
-    font-size: 45px;
-}
-
-.aColor:hover{
-    color:#FFC857;
-    text-decoration: none;
+    color: #D1495B;
+    box-shadow: 0 0 5px #D1495B;
+    text-shadow: 0 0 5px #D1495B;
 }
 
 .pic{
@@ -345,7 +334,7 @@ ul{
     #main:after{
         content: "Welcome To Noah Bruno's Portfolio.";
         position: absolute; left: 7px; top: 3px;
-        color: #FFC857;
+        color: #ECEBF3;
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 3px;
     }
@@ -412,12 +401,32 @@ ul{
         font-size: x-large;
     }
 
-    #main:after{
-        content: "Welcome To Noah Bruno's Portfolio.";
-        position: absolute; left: 8px; top: 4px;
-        color: #FFC857;
+    #main{
+        display:none;
+    }
+
+    #smallScreen:after{
+        content: "Welcome To";
+        position: absolute; left: 4px; top: 2px;
+        color: #ECEBF3;
         font-family: 'Bebas Neue', cursive;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
+    }
+
+    #smallScreen2:after{
+        content: "Noah Bruno's";
+        position: absolute; left: 4px; top: 2px;
+        color:#ECEBF3;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+    }
+
+    #smallScreen3:after{
+        content: "Portfolio";
+        position: absolute; left: 4px; top: 2px;
+        color: #ECEBF3;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
     }
 
     .type {
@@ -425,16 +434,15 @@ ul{
         border-right: .15em solid #2D2D2A;
         color: #2D2D2A;
         white-space: nowrap;
-        font-size: 3rem;
+        font-size: 55px;
         width: 0;
         animation: typing 1.5s steps(20, end) forwards,
         blink .8s infinite;
         font-family: 'Bebas Neue', cursive;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
         display: inline;
         position:relative;
     }
-
 
     #lastCard{
         display: none;
@@ -443,7 +451,7 @@ ul{
     #lastCard2:after{
         content: "Work";
         position: absolute; left: 4px; top: 2px;
-        color: #D1495B;
+        color: #7BAE7F;
         font-family: 'Bangers', cursive;
         letter-spacing: 2px;
     }
@@ -459,79 +467,9 @@ ul{
         font-size:large;
     }
 
-
-    #main:after{
-        content: "Welcome To Noah Bruno's Portfolio.";
-        position: absolute; left: 8px; top: 4px;
-        color: #FFC857;
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 3px;
-    }
-
-    .type {
-        overflow: hidden;
-        border-right: .15em solid #2D2D2A;
-        color: #2D2D2A;
-        white-space: nowrap;
-        font-size: 1.5rem;
-        width: 0;
-        animation: typing 1.5s steps(20, end) forwards,
-        blink .8s infinite;
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 3px;
-        display: inline;
-        position:relative;
-    }
-
 }
 
 @media screen and (max-width: 425px){
-    /*#main:after{*/
-    /*    content: "Welcome To Noah Bruno's Portfolio.";*/
-    /*    position: absolute; left: 4px; top: 2px;*/
-    /*    color: #FFC857;*/
-    /*    font-family: 'Bebas Neue', cursive;*/
-    /*    letter-spacing: 3px;*/
-    /*}*/
-
-    #smallScreen:after{
-        content: "Welcome To";
-        position: absolute; left: 4px; top: 2px;
-        color: #FFC857;
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 3px;
-    }
-
-    #smallScreen2:after{
-        content: "Noah Bruno's";
-        position: absolute; left: 4px; top: 2px;
-        color: #FFC857;
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 3px;
-    }
-
-    #smallScreen3:after{
-        content: "Portfolio";
-        position: absolute; left: 4px; top: 2px;
-        color: #FFC857;
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 3px;
-    }
-
-    .type {
-        overflow: hidden;
-        border-right: .15em solid #2D2D2A;
-        color: #2D2D2A;
-        white-space: nowrap;
-        font-size: 50px;
-        width: 0;
-        animation: typing 1.5s steps(20, end) forwards,
-        blink .8s infinite;
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 3px;
-        display: inline;
-        position:relative;
-    }
 
     .aColor{
         font-size: 30px;

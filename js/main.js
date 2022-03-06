@@ -77,17 +77,18 @@ $("#github").hover(function(){
 })
 
 setTimeout(function () {
+    $("#smallScreen2").removeClass("hide")
+}, 1499);
+
+setTimeout(function () {
     $("#smallScreen2").addClass("type")
 }, 1500);
 
 setTimeout(function () {
-    $("#smallScreen2").removeClass("hide")
-}, 1499);
+    $("#smallScreen3").removeClass("hide")
+}, 2999);
 
 setTimeout(function () {
     $("#smallScreen3").addClass("type")
 }, 3000);
 
-setTimeout(function () {
-    $("#smallScreen3").removeClass("hide")
-}, 2999);
