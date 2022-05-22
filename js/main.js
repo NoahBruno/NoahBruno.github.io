@@ -116,6 +116,7 @@ function darkMode() {
     linkText.forEach(x => x.classList.toggle('dark-mode-link'));
     nav.forEach(x => x.classList.toggle('dark-mode-nav'));
     text.forEach(x => x.classList.toggle('dark-mode-text'));
+    textSize.forEach(x => x.classList.toggle('dark-mode-text'));
     typing.forEach(x => x.classList.toggle('dark-mode-typing'));
 
 
@@ -132,7 +133,6 @@ function darkMode() {
         cardTopsE.style.color = "#3e6241";
         cardTopsW.style.color = "#3e6241";
         cardTopsW2.style.color = "#3e6241";
-        textSize.style.color = "#ECEBF3";
 
     }else{
         front.style.backgroundColor = "#3e6241";
@@ -144,7 +144,6 @@ function darkMode() {
         cardTopsE.style.color = "#121212";
         cardTopsW.style.color = "#121212";
         cardTopsW2.style.color = "#121212";
-        textSize.style.color = "#121212";
 
 
     }
