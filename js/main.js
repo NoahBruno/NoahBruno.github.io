@@ -108,6 +108,7 @@ function darkMode() {
     let cardTopsW = document.querySelector(".forCardTopsW");
     let cardTopsW2 = document.querySelector(".forCardTopsW2");
     let text = document.querySelectorAll(".bigText");
+    let textSize = document.querySelectorAll(".textSize");
 
     let exists = front.classList.contains('dark-mode');
 
@@ -131,6 +132,7 @@ function darkMode() {
         cardTopsE.style.color = "#3e6241";
         cardTopsW.style.color = "#3e6241";
         cardTopsW2.style.color = "#3e6241";
+        textSize.style.color = "#ECEBF3";
 
     }else{
         front.style.backgroundColor = "#3e6241";
@@ -142,6 +144,7 @@ function darkMode() {
         cardTopsE.style.color = "#121212";
         cardTopsW.style.color = "#121212";
         cardTopsW2.style.color = "#121212";
+        textSize.style.color = "#121212";
 
 
     }
