@@ -101,12 +101,13 @@ function darkMode() {
     let about = document.querySelector(".aboutMe");
     let ex = document.querySelector(".experience");
     let work = document.querySelector(".work");
-    let typing = document.querySelector(".type");
+    let typing = document.querySelectorAll(".type");
+    let firstTyping = document.querySelector(".type");
     let cardTops = document.querySelector(".forCardTops");
     let cardTopsE = document.querySelector(".forCardTopsE");
     let cardTopsW = document.querySelector(".forCardTopsW");
+    let cardTopsW2 = document.querySelector(".forCardTopsW2");
     let text = document.querySelectorAll(".bigText");
-    // let card= document.querySelector("#lastCard:after");
 
     let exists = front.classList.contains('dark-mode');
 
@@ -114,6 +115,8 @@ function darkMode() {
     linkText.forEach(x => x.classList.toggle('dark-mode-link'));
     nav.forEach(x => x.classList.toggle('dark-mode-nav'));
     text.forEach(x => x.classList.toggle('dark-mode-text'));
+    typing.forEach(x => x.classList.toggle('dark-mode-typing'));
+
 
 
     front.classList.toggle('dark-mode');
@@ -123,20 +126,23 @@ function darkMode() {
         about.style.backgroundColor = "#121212";
         work.style.backgroundColor = "#121212";
         ex.style.backgroundColor = "#121212";
-        typing.style.color = "#3e6241";
+        firstTyping.style.color = "#3e6241";
         cardTops.style.color = "#3e6241";
         cardTopsE.style.color = "#3e6241";
-        cardTopsW.style.color = "rgb(236,235,243)";
-        // card.style.color = "red";
+        cardTopsW.style.color = "#3e6241";
+        cardTopsW2.style.color = "#3e6241";
+
     }else{
         front.style.backgroundColor = "#3e6241";
         about.style.backgroundColor = "#73956F";
         ex.style.backgroundColor = "#7BAE7F";
-        work.style.backgroundColor = "#ECEBF3";
-        typing.style.color = "#121212";
+        work.style.backgroundColor = "#9bc49c";
+        firstTyping.style.color = "#121212";
         cardTops.style.color = "#121212";
         cardTopsE.style.color = "#121212";
         cardTopsW.style.color = "#121212";
+        cardTopsW2.style.color = "#121212";
+
 
     }
 

@@ -72,6 +72,9 @@
                         <span class="material-icons">&#xe8a3;</span>
                         <span class="link-text"> Contact</span>
                     </a>
+                    <button type="button" onclick="darkMode()" class="btn btn-sm">
+                        Dark Mode
+                    </button>
                 </li>
             </ul>
         </div>
@@ -89,10 +92,10 @@
     <h1 id="smallScreen" class="type d-block d-md-none"> Welcome To</h1>
 </div>
     <div>
-<h1 id="smallScreen2" class="hide d-block d-md-none">Noah Bruno's</h1>
+<h1 id="smallScreen2" class=" hide d-block d-md-none">Noah Bruno's</h1>
     </div>
     <div>
-<h1 id="smallScreen3" class="hide d-block d-md-none">Portfolio</h1>
+<h1 id="smallScreen3" class=" hide d-block d-md-none">Portfolio</h1>
     </div>
 </div>
 </div>
@@ -102,11 +105,17 @@
         <div class=" card-header text-center">
             <h2 id="topCard" class="forCardTops">About Me</h2>
         </div>
-        <div class="card-body d-flex">
-            <p id="text" class="bigText">My name is Noah Bruno.<br> I'm a Full-stack software developer from San Antonio, Tx. I love tackling new coding challenges that put my skills to the test. Feel free to contact me to chat for any of your coding needs. </p>
-            <div><img src="/assets/NoahBruno.jpg" class="pic"></div>
+        <div class="row">
+        <div class="col-6">
+        <div class="card-body text-center">
+            <p class="textSize">My name is Noah Bruno.</p>
+            <p class="textSize"> I'm a Full-stack software developer from San Antonio, Tx. I love tackling new coding challenges that put my skills to the test. Feel free to contact me to chat for any of your coding needs. </p>
         </div>
-
+        </div>
+        <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class=""><img src="/assets/NoahBruno.jpg" class="pic"></div>
+        </div>
+        </div>
     </div>
 </div>
 <!--EXPERIENCE------------------------------------------------------------->
@@ -123,7 +132,6 @@
                     <p id="boot" class="e">Bootstrap</p>
                     <p id="ajax" class="e">Spring Boot</p>
                     <p id="java" class="e">HTML</p>
-                <footer class="blockquote">-Always ready to learn more! <cite title="Source Title"></cite></footer>
         </div>
     </div>
 </div>
@@ -132,6 +140,7 @@
     <div class=" card-transparent me w-100">
         <div class="card-header text-center">
             <h2 id="lastCard" class="forCardTopsW">Work/Education</h2>
+            <h2 id="lastCard2" class="forCardTopsW2">Work</h2>
         </div>
         <div class="card-body">
                 <p class="bigText">Education</p>
@@ -168,7 +177,7 @@
         </div>
     </div>
 </div>
-<footer id="contact" class="bg-dark text-center text-white">
+<footer id="contact" class="footer text-center text-white">
     <!-- Grid container -->
     <div class="container p-4">
         <h2>Contact Information</h2>
@@ -197,7 +206,7 @@
         <section class="mb-4">
             <h2>Looking to hire?</h2>
             <h5>
-                Well you're in luck! I'm always ready for a new challenge! Contact me through any of the above ways, and I will get back to you as soon as possible.
+                Well you're in luck! I'm always ready for a new challenge! Contact me through any of the ways listed above. I will get back to you as soon as possible.
             </h5>
         </section>
 

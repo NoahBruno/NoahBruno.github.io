@@ -59,6 +59,10 @@ ul{
     float:left;
 }
 
+.dark-mode-typing{
+    color:#3e6241;
+}
+
 .dark-mode-text{
     color: #ECEBF3;
 }
@@ -141,7 +145,8 @@ a:hover .dark-mode-icon{
 
 .work{
     width: 100%;
-    background-color: #ECEBF3;
+    /*background-color: #ECEBF3;*/
+    background-color: #9bc49c;
     font-family: 'Bangers', cursive;
 }
 
@@ -164,7 +169,8 @@ a:hover .dark-mode-icon{
 #lastCard:after{
     content: "Work/Education";
     position: absolute; left: 4px; top: 2px;
-    color: #7BAE7F;
+    /*color: #7BAE7F;*/
+    color:#ECEBF3;
     font-family: 'Bangers', cursive;
     letter-spacing: 2px;
 }
@@ -277,6 +283,10 @@ a:hover .dark-mode-icon{
     font-size: xx-large;
 }
 
+.textSize{
+    font-size: large;
+}
+
 .hide{
     visibility: hidden;
 }
@@ -326,6 +336,10 @@ a:hover .dark-mode-icon{
 .projectImg{
     width:150px;
     height:150px;
+}
+
+.footer{
+    background-color: #121212;
 }
 
 @media screen and (max-width: 1369px){
@@ -506,6 +520,22 @@ a:hover .dark-mode-icon{
         position:relative;
     }
 
+    .dark-mode-typing{
+        color:#3e6241;
+    }
+
+    .forCardTopsW2 {
+        overflow: hidden;
+        color: #121212;
+        white-space: nowrap;
+        font-size: 4.5rem;
+        width: 0;
+        font-family: 'Bangers', cursive;
+        letter-spacing: 2px;
+        display: inline;
+        position:relative;
+    }
+
     #lastCard{
         display: none;
     }
@@ -513,7 +543,7 @@ a:hover .dark-mode-icon{
     #lastCard2:after{
         content: "Work";
         position: absolute; left: 4px; top: 2px;
-        color: #7BAE7F;
+        color: #ECEBF3;
         font-family: 'Bangers', cursive;
         letter-spacing: 2px;
     }
@@ -578,6 +608,10 @@ a:hover .dark-mode-icon{
     .pic{
         width:20vh;
         height:30vh;
+    }
+
+    .textSize{
+        font-size: small;
     }
 
 }
