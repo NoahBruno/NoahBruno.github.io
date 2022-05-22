@@ -20,9 +20,12 @@
     <ul class="navbar-nav">
         <li class="">
             <a class="navbar-brand nav-links" href="#">
-                <img src="/assets/NoahBruno.jpg" width="60" height="60" class="d-inline-block rounded-circle" alt="">
+                <img src="/assets/NoahBruno.png" width="60" height="60" class="d-inline-block rounded-circle" alt="Profile picture">
                 <span class="link-text">  Noah Bruno</span>
             </a>
+            <button type="button" onclick="darkMode()" class="btn btn-sm">
+                Dark Mode
+            </button>
         </li>
     </ul>
     <ul class="navbar-nav">
@@ -49,7 +52,7 @@
 <div id="hamburger" class="pos-f-t d-block d-md-none">
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-            <img src="/assets/NoahBruno.jpg" width="60" height="60" class="d-inline-block rounded-circle" alt="">
+            <img src="/assets/NoahBruno.jpg" width="60" height="60" class="d-inline-block rounded-circle" alt="Profile picture">
             <span class="link-text">  Noah Bruno</span>
             <ul class="col-1">
                 <li class="">
@@ -79,7 +82,7 @@
         </button>
     </nav>
 </div>
-<div id="frontPage" class="d-flex justify-content-center align-items-center">
+<div id="frontPage" class="frontPage d-flex align-items-center">
 <h1 id="main" class="type">Welcome To Noah Bruno's Portfolio.</h1>
 <div class="col">
     <div>
@@ -94,23 +97,23 @@
 </div>
 </div>
 <!--ABOUT ME------------------------------------------------------------->
-<div id="aboutMe" class=" container-fluid ">
+<div id="aboutMe" class="aboutMe container-fluid ">
     <div class=" card-transparent me animatefadeInRight w-100" >
         <div class=" card-header text-center">
-            <h2 id="topCard" class="forCardTops ">About Me</h2>
+            <h2 id="topCard" class="forCardTops">About Me</h2>
         </div>
         <div class="card-body d-flex">
-            <p id="text" class="bigText">My name is Noah Bruno.<br> I'm a Full-stack software developer from San Antonio, Tx. I like sports, video games and tackling new coding challenges that put my skills to the test. Feel free to contact me to chat for any of your coding needs. </p>
+            <p id="text" class="bigText">My name is Noah Bruno.<br> I'm a Full-stack software developer from San Antonio, Tx. I love tackling new coding challenges that put my skills to the test. Feel free to contact me to chat for any of your coding needs. </p>
             <div><img src="/assets/NoahBruno.jpg" class="pic"></div>
         </div>
 
     </div>
 </div>
 <!--EXPERIENCE------------------------------------------------------------->
-<div id="experience" class=" container-fluid d-flex justify-content-end ">
+<div id="experience" class="experience container-fluid d-flex justify-content-end ">
     <div class="card-transparent animatefadeInLeft me2 w-100" >
         <div class="card-header text-center">
-            <h2 id="middleCard" class="forCardTops">Experience</h2>
+            <h2 id="middleCard" class="forCardTopsE">Experience</h2>
         </div>
         <div class="card-body effect">
                     <p id="html" class="e">Java</p>
@@ -118,18 +121,17 @@
                     <p id="mysql" class="e">MySQL</p>
                     <p id="javaS" class="e">Javascript</p>
                     <p id="boot" class="e">Bootstrap</p>
-                    <p id="ajax" class="e">AJAX</p>
+                    <p id="ajax" class="e">Spring Boot</p>
                     <p id="java" class="e">HTML</p>
                 <footer class="blockquote">-Always ready to learn more! <cite title="Source Title"></cite></footer>
         </div>
     </div>
 </div>
 <!--WORK--------------------------------------------------------------------->
-<div id="work" class=" container-fluid d-flex justify-content-start ">
+<div id="work" class="work container-fluid d-flex justify-content-start ">
     <div class=" card-transparent me w-100">
         <div class="card-header text-center">
-            <h2 id="lastCard" class="forCardTops">Work/Education</h2>
-            <h2 id="lastCard2" class="forCardTops">Work</h2>
+            <h2 id="lastCard" class="forCardTopsW">Work/Education</h2>
         </div>
         <div class="card-body">
                 <p class="bigText">Education</p>
@@ -155,11 +157,11 @@
                     </div>
                 </div>
                 <div class="card jack">
-                    <img class="card-img-top" src="assets/Screen%20Shot%20weather.png" alt="Card image cap">
+                    <img class="card-img-top" src="assets/pokefight.png" alt="Card image cap">
                     <div class="card-body">
-                        <h4 class="card-title">Weather Project</h4>
-                        <p class="card-text">Want to know the weather?<br> The weather app has your back! Using mapbox api key and javascript I created an app where you can search or click on any destination and find the details you need to know about the weather. </p>
-                        <a href="https://noahbruno.github.io/WeatherApp/" style="color:#7BAE7F;" class="btn btn-dark btn-lg d-flex justify-content-center">Go To Weather Project</a>
+                        <h4 class="card-title">Poke fight</h4>
+                        <p class="card-text">Poke Fight!<br>Come battle Pokemon and try to catch them all! You can do that here in this project built using Javascript, CSS, and Spring Boot.</p>
+                        <a href="https://pokefight.quest" style="color:#7BAE7F;" class="btn btn-dark btn-lg d-flex justify-content-center">Go To PokeFight</a>
                     </div>
                 </div>
             </div>
