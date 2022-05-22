@@ -284,7 +284,7 @@ a:hover .dark-mode-icon{
 }
 
 .textSize{
-    font-size: large;
+    font-size: x-large;
 }
 
 .hide{
@@ -557,6 +557,10 @@ a:hover .dark-mode-icon{
 
     .aColor{
         font-size:large;
+    }
+
+    .textSize{
+        font-size: medium;
     }
 
 }
