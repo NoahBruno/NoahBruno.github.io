@@ -1,21 +1,5 @@
-body{
-    color:black;
-    background-color: #ECEBF3;
-    margin: 0;
-    padding: 0;
-}
 
-body::-webkit-scrollbar{
-    width:0.25rem;
-}
-
-body::-webkit-scrollbar-track{
-    background: #ffffff;
-}
-
-body::-webkit-scrollbar-thumb{
-    background: #000000;
-}
+/*--------------------------------------------NAVBAR CSS--------------------------------------------------------------*/
 
 .link-text{
     font-size: large;
@@ -58,6 +42,7 @@ ul{
     position: relative;
     float:left;
 }
+/*----------------------------------------------DARK-MODE CSS---------------------------------------------------------*/
 
 .dark-mode-typing{
     color:#3e6241;
@@ -88,7 +73,7 @@ a:hover .dark-mode-icon{
 .dark-mode-nav {
     background-color: #3e6241;
 }
-
+/*-------------------------------------------------TYPING EFFECT CSS--------------------------------------------------*/
 
 #main:after{
     content: "Welcome To Noah Bruno's Portfolio.";
@@ -111,43 +96,6 @@ a:hover .dark-mode-icon{
     letter-spacing: 3px;
     display: inline;
     position:relative;
-}
-
-@keyframes blink {
-    from { border-color: transparent }
-    to { border-color: #ECEBF3; }
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-.frontPage{
-    height: 90vh;
-    width: 100%;
-    background-color: #3e6241;
-}
-
-.aboutMe{
-    height: 90vh;
-    width: 100%;
-    background-color: #73956F;
-    font-family: 'Bangers', cursive;
-}
-
-.experience{
-    height: 90vh;
-    width: 100%;
-    background-color: #7BAE7F;
-    font-family: 'Bangers', cursive;
-}
-
-.work{
-    width: 100%;
-    /*background-color: #ECEBF3;*/
-    background-color: #9bc49c;
-    font-family: 'Bangers', cursive;
 }
 
 #topCard:after{
@@ -211,6 +159,44 @@ a:hover .dark-mode-icon{
     position:relative;
 }
 
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: #ECEBF3; }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+/*--------------------------------------------BACKGROUND DIVS CSS-----------------------------------------------------*/
+
+.frontPage{
+    height: 90vh;
+    width: 100%;
+    background-color: #3e6241;
+}
+
+.aboutMe{
+    height: 90vh;
+    width: 100%;
+    background-color: #73956F;
+    font-family: 'Bangers', cursive;
+}
+
+.experience{
+    height: 90vh;
+    width: 100%;
+    background-color: #7BAE7F;
+    font-family: 'Bangers', cursive;
+}
+
+.work{
+    width: 100%;
+    /*background-color: #ECEBF3;*/
+    background-color: #9bc49c;
+    font-family: 'Bangers', cursive;
+}
+/*-----------------------------------------------SLIDE IN ANIMATION CSS-----------------------------------------------*/
 
 @keyframes fadeInLeft {
     from {
@@ -278,18 +264,7 @@ a:hover .dark-mode-icon{
     transform: translateY(0);
     opacity: 1;
 }
-
-.bigText{
-    font-size: xx-large;
-}
-
-.textSize{
-    font-size: x-large;
-}
-
-.hide{
-    visibility: hidden;
-}
+/*--------------------------------------------BUTTON LIGHTING EFFECTS CSS---------------------------------------------*/
 
 .effect {
     margin: 0;
@@ -328,6 +303,20 @@ a:hover .dark-mode-icon{
     text-shadow: 0 0 5px #D1495B;
 }
 
+/*------------------------------------TEXT SIZE, PICTURE, AND FOOTER CSS----------------------------------------------*/
+
+.bigText{
+    font-size: xx-large;
+}
+
+.textSize{
+    font-size: x-large;
+}
+
+.hide{
+    visibility: hidden;
+}
+
 .pic{
     width:50vh;
     height:65vh;
@@ -341,6 +330,7 @@ a:hover .dark-mode-icon{
 .footer{
     background-color: #121212;
 }
+/*----------------------------------------------MEDIA QUERIES CSS-----------------------------------------------------*/
 
 @media screen and (max-width: 1369px){
 
@@ -359,6 +349,7 @@ a:hover .dark-mode-icon{
         position:relative;
     }
 }
+/*----------------------------------------------------MAX 1300 PX-----------------------------------------------------*/
 
 @media screen and (max-width: 1300px){
     .e{
@@ -395,6 +386,7 @@ a:hover .dark-mode-icon{
         margin-left:450px;
     }
 }
+/*------------------------------------------------------MAX 1024 PX---------------------------------------------------*/
 
 @media screen and (max-width: 1024px){
     #main:after{
@@ -454,6 +446,8 @@ a:hover .dark-mode-icon{
         margin-left:275px;
     }
 }
+
+/*-----------------------------------------------------MAX 767 PX-----------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
     .link-text{
@@ -548,9 +542,9 @@ a:hover .dark-mode-icon{
         letter-spacing: 2px;
     }
 
-
-
 }
+
+/*-----------------------------------------------------MAX 680 PX-----------------------------------------------------*/
 
 @media screen and (max-width: 680px){
 
@@ -562,9 +556,9 @@ a:hover .dark-mode-icon{
     .textSize{
         font-size: medium;
     }
-
 }
 
+/*------------------------------------------------------MAX 425 PX----------------------------------------------------*/
 @media screen and (max-width: 425px){
 
     .aColor{
@@ -605,7 +599,7 @@ a:hover .dark-mode-icon{
         margin-left:0;
     }
 }
-
+/*-----------------------------------------------MAX 400 PX-----------------------------------------------------------*/
 @media screen and (max-width: 400px){
 
 
@@ -620,12 +614,15 @@ a:hover .dark-mode-icon{
 
 }
 
+/*-----------------------------------------------MIN 768 PX-----------------------------------------------------------*/
+
 @media screen and (min-width: 768px){
     #lastCard2{
         display:none;
     }
 }
 
+/*-----------------------------------------------MIN 1300 PX----------------------------------------------------------*/
 @media screen and (min-width: 1300px) {
     .e{
         width:80px;

@@ -1,3 +1,6 @@
+
+//-------------------------------RIGHT SLIDE IN ANIMATION FUNCTION------------------------------------------------------
+
 function reveal() {
     var reveals = document.querySelectorAll(".me");
     for (var i = 0; i < reveals.length; i++) {
@@ -13,6 +16,8 @@ function reveal() {
         }
     }
 }
+
+//-------------------------------LEFT SLIDE IN ANIMATION FUNCTION-------------------------------------------------------
 
 window.addEventListener("scroll", reveal);
 
@@ -31,6 +36,7 @@ function revealTwo() {
         }
     }
 }
+//-------------------------------UP SLIDE IN ANIMATION FUNCTION---------------------------------------------------------
 
 window.addEventListener("scroll", revealTwo);
 
@@ -52,29 +58,33 @@ function revealJack() {
 
 window.addEventListener("scroll", revealJack);
 
+//-------------------------------FOOTER HOOVER OVER ANIMATION FUNCTION--------------------------------------------------
+
 $("#email").hover(function(){
     $(this).append("<span id='emailSpan'>noah.bruno122@gmail.com</span>")
 }, function(){
     $(this).find("#emailSpan").last().remove()
-})
+});
 
 $("#phone").hover(function(){
     $(this).append("<span id='phoneSpan'>(210)722-4286</span>")
 }, function(){
     $(this).find("#phoneSpan").last().remove()
-})
+});
 
 $("#linkedin").hover(function(){
     $(this).append("<span id='linkedinSpan'>@NoahBruno</span>")
 }, function(){
     $(this).find("#linkedinSpan").last().remove()
-})
+});
 
 $("#github").hover(function(){
     $(this).append("<span id='githubSpan'>@NoahBruno</span>")
 }, function(){
     $(this).find("#githubSpan").last().remove()
-})
+});
+
+//-------------------------------TIMEOUT FUNCTION FOR TYPING EFFECT-----------------------------------------------------
 
 setTimeout(function () {
     $("#smallScreen2").removeClass("hide")
@@ -91,6 +101,8 @@ setTimeout(function () {
 setTimeout(function () {
     $("#smallScreen3").addClass("type")
 }, 3000);
+
+//-------------------------------DARK-MODE QUERY SELECTORS AND COLOR REPLACE FUNCTIONS----------------------------------
 
 function darkMode() {
 
