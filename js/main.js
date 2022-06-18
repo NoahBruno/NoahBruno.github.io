@@ -17,9 +17,9 @@ function reveal() {
     }
 }
 
-//-------------------------------LEFT SLIDE IN ANIMATION FUNCTION-------------------------------------------------------
-
 window.addEventListener("scroll", reveal);
+
+//-------------------------------LEFT SLIDE IN ANIMATION FUNCTION-------------------------------------------------------
 
 function revealTwo() {
     var revealsTwo = document.querySelectorAll(".me2");
@@ -36,9 +36,11 @@ function revealTwo() {
         }
     }
 }
-//-------------------------------UP SLIDE IN ANIMATION FUNCTION---------------------------------------------------------
 
 window.addEventListener("scroll", revealTwo);
+
+//-------------------------------UP SLIDE IN ANIMATION FUNCTION---------------------------------------------------------
+
 
 function revealJack() {
     var revealJack = document.querySelectorAll(".jack");
